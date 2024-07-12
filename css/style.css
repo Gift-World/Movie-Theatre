@@ -1,0 +1,25 @@
+.card {
+
+    padding: 50px;
+	width: 20rem;
+	height: 20rem;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    padding-left: 500px;
+    
+ 
+}
+#buyticket{
+    color: red;
+    background-color: aquamarine;
+}
+#title{
+    font-style: italic;
+    padding-left: 30px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+body{
+    background-color: grey;
+}
