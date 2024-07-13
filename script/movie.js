@@ -18,14 +18,28 @@ function renderOneFilm(film) {
     <p id="desc">${film.description}</p>
     <button id="buyticket">Buy Ticket</button>
     </div>
+
     `;
+
   //Add event listener to buy ticket button
   card.querySelector("#buyticket").addEventListener("click", () => {
     buyTicket(film, card);
   });
+
   //add animal card to dom
   document.querySelector("#film-list").appendChild(card);
 }
+
+document.querySelector(".movie").addEventListener("click", () => {
+  fetch("http://localhost:3000/films/1")
+    .then((res) => res.json())
+    .then((filmData) => {
+      const film = filmData;
+      const posterUrl = film.poster;
+      window.location.href = posterUrl;
+    });
+});
+
 function buyTicket(film, card) {
   const ticketsElements = card.querySelector("#tickets");
   let availableTickets = film.capacity - film.tickets_sold;
