@@ -27,7 +27,7 @@ function renderOneFilm(film) {
   });
 
   //add animal card to dom
-  document.querySelector("#film-list").appendChild(card);
+  document.querySelector("#films").appendChild(card);
 }
 
 document.querySelector(".movie").addEventListener("click", () => {
@@ -167,12 +167,12 @@ document.querySelector(".movie15").addEventListener("click", () => {
 });
 
 function buyTicket(film, card) {
-  const ticketsElements = card.querySelector("#tickets");
+  const ticketsAvailable = card.querySelector("#tickets");
   let availableTickets = film.capacity - film.tickets_sold;
   if (availableTickets > 0) {
     availableTickets -= 1;
     film.tickets_sold += 1;
-    ticketsElements.textContent = `Available Tickets:${availableTickets}`;
+    ticketsAvailable.textContent = `Available Tickets:${availableTickets}`;
   } else {
     alert("Sorry, this show is sold out!");
   }
