@@ -39,6 +39,132 @@ document.querySelector(".movie").addEventListener("click", () => {
       window.location.href = posterUrl;
     });
 });
+document.querySelector(".movie2").addEventListener("click", () => {
+  fetch("http://localhost:3000/films/2")
+    .then((res) => res.json())
+    .then((filmData) => {
+      const film = filmData;
+      const posterUrl = film.poster;
+      window.location.href = posterUrl;
+    });
+});
+document.querySelector(".movie3").addEventListener("click", () => {
+  fetch("http://localhost:3000/films/3")
+    .then((res) => res.json())
+    .then((filmData) => {
+      const film = filmData;
+      const posterUrl = film.poster;
+      window.location.href = posterUrl;
+    });
+});
+document.querySelector(".movie4").addEventListener("click", () => {
+  fetch("http://localhost:3000/films/4")
+    .then((res) => res.json())
+    .then((filmData) => {
+      const film = filmData;
+      const posterUrl = film.poster;
+      window.location.href = posterUrl;
+    });
+});
+document.querySelector(".movie5").addEventListener("click", () => {
+  fetch("http://localhost:3000/films/5")
+    .then((res) => res.json())
+    .then((filmData) => {
+      const film = filmData;
+      const posterUrl = film.poster;
+      window.location.href = posterUrl;
+    });
+});
+document.querySelector(".movie6").addEventListener("click", () => {
+  fetch("http://localhost:3000/films/6")
+    .then((res) => res.json())
+    .then((filmData) => {
+      const film = filmData;
+      const posterUrl = film.poster;
+      window.location.href = posterUrl;
+    });
+});
+document.querySelector(".movie7").addEventListener("click", () => {
+  fetch("http://localhost:3000/films/7")
+    .then((res) => res.json())
+    .then((filmData) => {
+      const film = filmData;
+      const posterUrl = film.poster;
+      window.location.href = posterUrl;
+    });
+});
+document.querySelector(".movie8").addEventListener("click", () => {
+  fetch("http://localhost:3000/films/8")
+    .then((res) => res.json())
+    .then((filmData) => {
+      const film = filmData;
+      const posterUrl = film.poster;
+      window.location.href = posterUrl;
+    });
+});
+document.querySelector(".movie9").addEventListener("click", () => {
+  fetch("http://localhost:3000/films/9")
+    .then((res) => res.json())
+    .then((filmData) => {
+      const film = filmData;
+      const posterUrl = film.poster;
+      window.location.href = posterUrl;
+    });
+});
+document.querySelector(".movie10").addEventListener("click", () => {
+  fetch("http://localhost:3000/films/10")
+    .then((res) => res.json())
+    .then((filmData) => {
+      const film = filmData;
+      const posterUrl = film.poster;
+      window.location.href = posterUrl;
+    });
+});
+document.querySelector(".movie11").addEventListener("click", () => {
+  fetch("http://localhost:3000/films/11")
+    .then((res) => res.json())
+    .then((filmData) => {
+      const film = filmData;
+      const posterUrl = film.poster;
+      window.location.href = posterUrl;
+    });
+});
+document.querySelector(".movie12").addEventListener("click", () => {
+  fetch("http://localhost:3000/films/12")
+    .then((res) => res.json())
+    .then((filmData) => {
+      const film = filmData;
+      const posterUrl = film.poster;
+      window.location.href = posterUrl;
+    });
+});
+document.querySelector(".movie13").addEventListener("click", () => {
+  fetch("http://localhost:3000/films/13")
+    .then((res) => res.json())
+    .then((filmData) => {
+      const film = filmData;
+      const posterUrl = film.poster;
+      window.location.href = posterUrl;
+    });
+});
+document.querySelector(".movie14").addEventListener("click", () => {
+  fetch("http://localhost:3000/films/14")
+    .then((res) => res.json())
+    .then((filmData) => {
+      const film = filmData;
+      const posterUrl = film.poster;
+      window.location.href = posterUrl;
+    });
+});
+document.querySelector(".movie15").addEventListener("click", () => {
+  fetch("http://localhost:3000/films/15")
+    .then((res) => res.json())
+    .then((filmData) => {
+      const film = filmData;
+      const posterUrl = film.poster;
+      window.location.href = posterUrl;
+    });
+});
 
 function buyTicket(film, card) {
   const ticketsElements = card.querySelector("#tickets");

@@ -59,5 +59,4 @@ To use this repo, follow these steps:
 
 - [Charles Gift](https://github.com/Gift-World)
 
-## License
 
