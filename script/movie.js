@@ -51,7 +51,7 @@ function buyTicket(film, card) {
     alert("Sorry, this show is sold out!");
   }
 }
-//fetching
+//fetching all the elements
 function getAllFilms() {
   fetch("http://localhost:3000/films")
     .then((res) => res.json())

@@ -1,41 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Silkscreen:wght@400;700&display=swap");
 .card {
-
-    padding: 50px;
-	width: 30rem;
-	height: 30rem;
-	display: flex;
-	flex-direction: row;
-    justify-content: space-between;
-    padding-left: 360px;
-   margin-top: 5px;
-    
- 
+  padding: 50px;
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 360px;
+  margin-top: 5px;
 }
-.main{
-    display: flex;
+h1 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: oblique;
+  font-size: 50px;
 }
-.main div{
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin: 2px;
+.main {
+  display: flex;
 }
-#movies{
-    background-color: brown;
-    margin-left: 150px;
-    width: 980px;
-    
+.main div {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 2px;
 }
-#buyticket{
-    color: red;
-    background-color: aquamarine;
+#movies {
+  background-color: brown;
+  margin-left: 150px;
+  width: 980px;
 }
-#title{
-    font-style: italic;
-    padding-left: 30px;
-    margin-top: 10px;
-    font-size: 15px;
+#buyticket {
+  color: red;
+  background-color: aquamarine;
 }
-body{
-    background-color: grey;
+#title {
+  font-style: italic;
+  padding-left: 30px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+body {
+  background-color: grey;
 }
