@@ -1,5 +1,0 @@
-KITLOONG:
-https://github.com/kitloong/json-server-vercel
-
-VERCEL:
-https://vercel.com/
