@@ -54,6 +54,8 @@ To use this repo, follow these steps:
 - If using Visual Studio Code, you can use the Live Server extension to run the file on any web browser set as your default web browser.
 
 - Try out the features stated at the start of this file.
+## Live Link
+- https://movie-theatre.vercel.app/
 
 ## Authors
 

@@ -31,7 +31,7 @@ function renderOneFilm(film) {
 }
 
 document.querySelector(".movie").addEventListener("click", () => {
-  fetch("http://localhost:3000/films/1")
+  fetch("https://movie-theatre-backend.vercel.app/films/1")
     .then((res) => res.json())
     .then((filmData) => {
       const film = filmData;
@@ -40,7 +40,7 @@ document.querySelector(".movie").addEventListener("click", () => {
     });
 });
 document.querySelector(".movie2").addEventListener("click", () => {
-  fetch("http://localhost:3000/films/2")
+  fetch("https://movie-theatre-backend.vercel.app/films/2")
     .then((res) => res.json())
     .then((filmData) => {
       const film = filmData;
@@ -49,7 +49,7 @@ document.querySelector(".movie2").addEventListener("click", () => {
     });
 });
 document.querySelector(".movie3").addEventListener("click", () => {
-  fetch("http://localhost:3000/films/3")
+  fetch("https://movie-theatre-backend.vercel.app/films/3")
     .then((res) => res.json())
     .then((filmData) => {
       const film = filmData;
@@ -58,7 +58,7 @@ document.querySelector(".movie3").addEventListener("click", () => {
     });
 });
 document.querySelector(".movie4").addEventListener("click", () => {
-  fetch("http://localhost:3000/films/4")
+  fetch("https://movie-theatre-backend.vercel.app/films/4")
     .then((res) => res.json())
     .then((filmData) => {
       const film = filmData;
@@ -67,7 +67,7 @@ document.querySelector(".movie4").addEventListener("click", () => {
     });
 });
 document.querySelector(".movie5").addEventListener("click", () => {
-  fetch("http://localhost:3000/films/5")
+  fetch("https://movie-theatre-backend.vercel.app/films/5")
     .then((res) => res.json())
     .then((filmData) => {
       const film = filmData;
@@ -76,7 +76,7 @@ document.querySelector(".movie5").addEventListener("click", () => {
     });
 });
 document.querySelector(".movie6").addEventListener("click", () => {
-  fetch("http://localhost:3000/films/6")
+  fetch("https://movie-theatre-backend.vercel.app/films/6")
     .then((res) => res.json())
     .then((filmData) => {
       const film = filmData;
@@ -85,7 +85,7 @@ document.querySelector(".movie6").addEventListener("click", () => {
     });
 });
 document.querySelector(".movie7").addEventListener("click", () => {
-  fetch("http://localhost:3000/films/7")
+  fetch("https://movie-theatre-backend.vercel.app/films/7")
     .then((res) => res.json())
     .then((filmData) => {
       const film = filmData;
@@ -94,7 +94,7 @@ document.querySelector(".movie7").addEventListener("click", () => {
     });
 });
 document.querySelector(".movie8").addEventListener("click", () => {
-  fetch("http://localhost:3000/films/8")
+  fetch("https://movie-theatre-backend.vercel.app/films/8")
     .then((res) => res.json())
     .then((filmData) => {
       const film = filmData;
@@ -103,7 +103,7 @@ document.querySelector(".movie8").addEventListener("click", () => {
     });
 });
 document.querySelector(".movie9").addEventListener("click", () => {
-  fetch("http://localhost:3000/films/9")
+  fetch("https://movie-theatre-backend.vercel.app/films/9")
     .then((res) => res.json())
     .then((filmData) => {
       const film = filmData;
@@ -112,7 +112,7 @@ document.querySelector(".movie9").addEventListener("click", () => {
     });
 });
 document.querySelector(".movie10").addEventListener("click", () => {
-  fetch("http://localhost:3000/films/10")
+  fetch("https://movie-theatre-backend.vercel.app/films/10")
     .then((res) => res.json())
     .then((filmData) => {
       const film = filmData;
@@ -121,7 +121,7 @@ document.querySelector(".movie10").addEventListener("click", () => {
     });
 });
 document.querySelector(".movie11").addEventListener("click", () => {
-  fetch("http://localhost:3000/films/11")
+  fetch("https://movie-theatre-backend.vercel.app/films/11")
     .then((res) => res.json())
     .then((filmData) => {
       const film = filmData;
@@ -130,7 +130,7 @@ document.querySelector(".movie11").addEventListener("click", () => {
     });
 });
 document.querySelector(".movie12").addEventListener("click", () => {
-  fetch("http://localhost:3000/films/12")
+  fetch("https://movie-theatre-backend.vercel.app/films/12")
     .then((res) => res.json())
     .then((filmData) => {
       const film = filmData;
@@ -139,7 +139,7 @@ document.querySelector(".movie12").addEventListener("click", () => {
     });
 });
 document.querySelector(".movie13").addEventListener("click", () => {
-  fetch("http://localhost:3000/films/13")
+  fetch("https://movie-theatre-backend.vercel.app/films/13")
     .then((res) => res.json())
     .then((filmData) => {
       const film = filmData;
@@ -148,7 +148,7 @@ document.querySelector(".movie13").addEventListener("click", () => {
     });
 });
 document.querySelector(".movie14").addEventListener("click", () => {
-  fetch("http://localhost:3000/films/14")
+  fetch("https://movie-theatre-backend.vercel.app/films/14")
     .then((res) => res.json())
     .then((filmData) => {
       const film = filmData;
@@ -157,7 +157,7 @@ document.querySelector(".movie14").addEventListener("click", () => {
     });
 });
 document.querySelector(".movie15").addEventListener("click", () => {
-  fetch("http://localhost:3000/films/15")
+  fetch("https://movie-theatre-backend.vercel.app/films/15")
     .then((res) => res.json())
     .then((filmData) => {
       const film = filmData;
@@ -179,7 +179,7 @@ function buyTicket(film, card) {
 }
 //fetching all the elements
 function getAllFilms() {
-  fetch("http://localhost:3000/films")
+  fetch("https://movie-theatre-backend.vercel.app/films")
     .then((res) => res.json())
     .then((filmData) => filmData.forEach((film) => renderOneFilm(film)));
 }
