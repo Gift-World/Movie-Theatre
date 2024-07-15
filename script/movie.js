@@ -1,5 +1,5 @@
 function renderOneFilm(film) {
-  e;
+  //Building the films card
   let card = document.createElement("li");
   card.className = "card";
   card.innerHTML = `
@@ -21,10 +21,12 @@ function renderOneFilm(film) {
 
     `;
 
+  //Adding event listener to the buy tickets button
   card.querySelector("#buyticket").addEventListener("click", () => {
     buyTicket(film, card);
   });
 
+  //appending my card to films id in html
   document.querySelector("#films").appendChild(card);
 }
 
@@ -175,7 +177,7 @@ function buyTicket(film, card) {
     alert("Sorry, this show is sold out!");
   }
 }
-
+//fetching all the films and details
 function getAllFilms() {
   fetch("https://movie-theatre-backend.vercel.app/films")
     .then((res) => res.json())
