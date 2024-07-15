@@ -1,5 +1,5 @@
 function renderOneFilm(film) {
-  //Build a movie
+  e;
   let card = document.createElement("li");
   card.className = "card";
   card.innerHTML = `
@@ -21,12 +21,10 @@ function renderOneFilm(film) {
 
     `;
 
-  //Add event listener to buy ticket button
   card.querySelector("#buyticket").addEventListener("click", () => {
     buyTicket(film, card);
   });
 
-  //add animal card to dom
   document.querySelector("#films").appendChild(card);
 }
 
