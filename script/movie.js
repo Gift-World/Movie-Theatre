@@ -175,7 +175,7 @@ function buyTicket(film, card) {
     alert("Sorry, this show is sold out!");
   }
 }
-//fetching all the elements
+
 function getAllFilms() {
   fetch("https://movie-theatre-backend.vercel.app/films")
     .then((res) => res.json())
