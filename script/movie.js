@@ -26,145 +26,19 @@ function renderOneFilm(film) {
     buyTicket(film, card);
   });
 
-  //appending my card to films id in html
+  
   document.querySelector("#films").appendChild(card);
-}
+  let menu = document.querySelector("#menuList");
+  movielist = document.createElement("li");
 
-document.querySelector(".movie").addEventListener("click", () => {
-  fetch("https://movie-theatre-backend.vercel.app/films/1")
-    .then((res) => res.json())
-    .then((filmData) => {
-      const film = filmData;
-      const posterUrl = film.poster;
-      window.location.href = posterUrl;
-    });
-});
-document.querySelector(".movie2").addEventListener("click", () => {
-  fetch("https://movie-theatre-backend.vercel.app/films/2")
-    .then((res) => res.json())
-    .then((filmData) => {
-      const film = filmData;
-      const posterUrl = film.poster;
-      window.location.href = posterUrl;
-    });
-});
-document.querySelector(".movie3").addEventListener("click", () => {
-  fetch("https://movie-theatre-backend.vercel.app/films/3")
-    .then((res) => res.json())
-    .then((filmData) => {
-      const film = filmData;
-      const posterUrl = film.poster;
-      window.location.href = posterUrl;
-    });
-});
-document.querySelector(".movie4").addEventListener("click", () => {
-  fetch("https://movie-theatre-backend.vercel.app/films/4")
-    .then((res) => res.json())
-    .then((filmData) => {
-      const film = filmData;
-      const posterUrl = film.poster;
-      window.location.href = posterUrl;
-    });
-});
-document.querySelector(".movie5").addEventListener("click", () => {
-  fetch("https://movie-theatre-backend.vercel.app/films/5")
-    .then((res) => res.json())
-    .then((filmData) => {
-      const film = filmData;
-      const posterUrl = film.poster;
-      window.location.href = posterUrl;
-    });
-});
-document.querySelector(".movie6").addEventListener("click", () => {
-  fetch("https://movie-theatre-backend.vercel.app/films/6")
-    .then((res) => res.json())
-    .then((filmData) => {
-      const film = filmData;
-      const posterUrl = film.poster;
-      window.location.href = posterUrl;
-    });
-});
-document.querySelector(".movie7").addEventListener("click", () => {
-  fetch("https://movie-theatre-backend.vercel.app/films/7")
-    .then((res) => res.json())
-    .then((filmData) => {
-      const film = filmData;
-      const posterUrl = film.poster;
-      window.location.href = posterUrl;
-    });
-});
-document.querySelector(".movie8").addEventListener("click", () => {
-  fetch("https://movie-theatre-backend.vercel.app/films/8")
-    .then((res) => res.json())
-    .then((filmData) => {
-      const film = filmData;
-      const posterUrl = film.poster;
-      window.location.href = posterUrl;
-    });
-});
-document.querySelector(".movie9").addEventListener("click", () => {
-  fetch("https://movie-theatre-backend.vercel.app/films/9")
-    .then((res) => res.json())
-    .then((filmData) => {
-      const film = filmData;
-      const posterUrl = film.poster;
-      window.location.href = posterUrl;
-    });
-});
-document.querySelector(".movie10").addEventListener("click", () => {
-  fetch("https://movie-theatre-backend.vercel.app/films/10")
-    .then((res) => res.json())
-    .then((filmData) => {
-      const film = filmData;
-      const posterUrl = film.poster;
-      window.location.href = posterUrl;
-    });
-});
-document.querySelector(".movie11").addEventListener("click", () => {
-  fetch("https://movie-theatre-backend.vercel.app/films/11")
-    .then((res) => res.json())
-    .then((filmData) => {
-      const film = filmData;
-      const posterUrl = film.poster;
-      window.location.href = posterUrl;
-    });
-});
-document.querySelector(".movie12").addEventListener("click", () => {
-  fetch("https://movie-theatre-backend.vercel.app/films/12")
-    .then((res) => res.json())
-    .then((filmData) => {
-      const film = filmData;
-      const posterUrl = film.poster;
-      window.location.href = posterUrl;
-    });
-});
-document.querySelector(".movie13").addEventListener("click", () => {
-  fetch("https://movie-theatre-backend.vercel.app/films/13")
-    .then((res) => res.json())
-    .then((filmData) => {
-      const film = filmData;
-      const posterUrl = film.poster;
-      window.location.href = posterUrl;
-    });
-});
-document.querySelector(".movie14").addEventListener("click", () => {
-  fetch("https://movie-theatre-backend.vercel.app/films/14")
-    .then((res) => res.json())
-    .then((filmData) => {
-      const film = filmData;
-      const posterUrl = film.poster;
-      window.location.href = posterUrl;
-    });
-});
-document.querySelector(".movie15").addEventListener("click", () => {
-  fetch("https://movie-theatre-backend.vercel.app/films/15")
-    .then((res) => res.json())
-    .then((filmData) => {
-      const film = filmData;
-      const posterUrl = film.poster;
-      window.location.href = posterUrl;
-    });
-});
+  movielist.innerHTML = `${film.title}<br><button id="menubtn">Details</button>`;
+  let menubtn = movielist.querySelector("#menubtn");
+
+  menu.append(movielist);
+  menubtn.addEventListener("click", () => {
+    window.location.href = film.poster;
+  });
+}
 
 function buyTicket(film, card) {
   const ticketsAvailable = card.querySelector("#tickets");
